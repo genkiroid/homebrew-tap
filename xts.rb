@@ -5,28 +5,28 @@
 class Xts < Formula
   desc "xts is a script that generates an insert statement from a mysql xml dump file."
   homepage "https://genkiroid.github.io/"
-  version "0.1.1"
+  version "0.2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/genkiroid/xts/releases/download/v0.1.1/xts_0.1.1_darwin_amd64.tar.gz"
-      sha256 "11d94e6781559e33fb586a8bfe306a547861a57d3db17bca378fb850203ce6eb"
+      url "https://github.com/genkiroid/xts/releases/download/v0.2.0/xts_0.2.0_darwin_amd64.tar.gz"
+      sha256 "10926ad6bc9ec1b59390f5a38e8bdcd26feda9931fec742dce676b6bb0d5898e"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/genkiroid/xts/releases/download/v0.1.1/xts_0.1.1_darwin_arm64.tar.gz"
-      sha256 "c74f5d5725d855be2b2d70f442bda81ce780e77e23abf28a4191ff309a330f9f"
+      url "https://github.com/genkiroid/xts/releases/download/v0.2.0/xts_0.2.0_darwin_arm64.tar.gz"
+      sha256 "a3df8fd7d2419376b6709e928ddd4f19dab77bd8f12b75d97ae31431253ea0f2"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/genkiroid/xts/releases/download/v0.1.1/xts_0.1.1_linux_amd64.tar.gz"
-      sha256 "544a3c461f7e8b44ab3f5e839b09ecbaf711770efdec26fdd6c567fa8b323d04"
+      url "https://github.com/genkiroid/xts/releases/download/v0.2.0/xts_0.2.0_linux_amd64.tar.gz"
+      sha256 "f5aff8a768acda2eece20524a7f50a52892d8bdbbfacfd10dad8c0cd06339634"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/genkiroid/xts/releases/download/v0.1.1/xts_0.1.1_linux_arm64.tar.gz"
-      sha256 "78d4dbb6a25186634f73d07ae278345a544f38c115fa4702714971ed26dfff35"
+      url "https://github.com/genkiroid/xts/releases/download/v0.2.0/xts_0.2.0_linux_arm64.tar.gz"
+      sha256 "d5dcaeef6b4df47b656682d0eb4771911c6720ff944493ea9886dc662cef78a3"
     end
   end
 
